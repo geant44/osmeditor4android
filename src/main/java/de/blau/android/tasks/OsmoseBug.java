@@ -22,7 +22,7 @@ import de.blau.android.util.SavingHelper;
  * 
  * @author Simon Poole
  */
-public class OsmoseBug extends Bug implements Serializable {
+public final class OsmoseBug extends Bug implements Serializable {
 
     private static final String DEBUG_TAG = OsmoseBug.class.getSimpleName();
 
@@ -38,6 +38,14 @@ public class OsmoseBug extends Bug implements Serializable {
     private int    subclass;
     private String username;
 
+    /**
+     * Parse an InputStream containing Osmose task data
+     * 
+     * @param is the InputString
+     * @return a List of OsmoseBug
+     * @throws IOException
+     * @throws NumberFormatException
+     */
     public static List<OsmoseBug> parseBugs(InputStream is) throws IOException, NumberFormatException {
         List<OsmoseBug> result = new ArrayList<>();
         JsonReader reader = new JsonReader(new InputStreamReader(is));

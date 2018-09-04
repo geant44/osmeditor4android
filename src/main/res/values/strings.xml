@@ -78,6 +78,7 @@
     <string name="upload_gpx_visibility_label">Visibility</string>
     <string name="upload_validation_error_empty_comment">Comment should not be empty</string>
     <string name="upload_validation_error_empty_source">Source should not be empty</string>
+    <!-- Task dialog -->
     <string name="openstreetbug_new_title">New Note</string>
     <string name="openstreetbug_new_bug">Report Issue</string>
     <string name="openstreetbug_bug_title">Issue</string>
@@ -89,13 +90,17 @@
     <string name="openstreetbug_edit_closed">Closed</string>
     <string name="openstreetbug_commit_ok">Bug changes saved</string>
     <string name="openstreetbug_commit_fail">Could not save bug changes</string>
-    <string name="openstreetbug_not_downloaded">not downloaded</string>
+    <string name="not_downloaded_osmose_ref">%1$s (not downloaded) #%2$s</string>
+    <string name="downloaded_osmose_ref">%1$s %2$s</string>
     <string name="openstreetbug_last_updated">last updated</string>
     <string name="openstreetbug_unknown_task_type">Unknown task type</string>
     <string name="openstreetbug_not_supported">%1$s is not supported.</string>
+    <string name="maproulette_task_title">MapRoulette Task</string>
+    <!-- Unsaved data dialog -->
     <string name="unsaved_data_title">Caution!</string>
     <string name="unsaved_data_message">You have unsaved changes that will be discarded if you proceed.</string>
     <string name="unsaved_data_proceed">Discard &amp; proceed</string>
+    <!-- Imagery offset dialog -->
     <string name="imagery_offset_title">Imagery Offset</string>
     <string name="imagery_offset_description">Description</string>
     <string name="imagery_offset_not_found">No offsets found in 10km radius!</string>
@@ -882,6 +887,15 @@
     <string-array name="note_state">
         <item>Open</item>
         <item>Closed</item>
+    </string-array>
+    <string-array name="maproulette_state">
+        <item>Open</item>
+        <item>Closed</item>
+        <item>False positive</item>
+        <item>Skipped</item> 
+        <item>Deleted</item>
+        <item>Already fixed</item>
+        <item>Too hard</item>
     </string-array>
     <string-array name="followGPSbutton_entries">
         <item>Left</item>
